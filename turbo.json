@@ -55,7 +55,7 @@
         "RESEND_FROM_EMAIL"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build-app"],
       "outputs": [
         ".next/**",
         "!.next/cache/**",
