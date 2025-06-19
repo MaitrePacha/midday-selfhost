@@ -6,7 +6,7 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
-    "build-app": {
+    "build": {
       "env": [
         "SUPABASE_SERVICE_KEY",
         "SUPABASE_API_KEY",
@@ -55,7 +55,7 @@
         "RESEND_FROM_EMAIL"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
-      "dependsOn": ["^build-app"],
+      "dependsOn": ["^build"],
       "outputs": [
         ".next/**",
         "!.next/cache/**",
