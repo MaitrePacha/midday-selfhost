@@ -51,7 +51,8 @@
         "TRIGGER_API_KEY",
         "TRIGGER_PROJECT_ID",
         "NOVU_SECRET_KEY",
-        "ENABLE_NOTIFICATIONS"
+        "ENABLE_NOTIFICATIONS",
+        "RESEND_FROM_EMAIL"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],
@@ -87,16 +88,6 @@
     "typecheck": {
       "dependsOn": ["^topo"],
       "outputs": []
-    },
-
-    "@midday/engine#build": {
-      "env": ["RESEND_FROM_EMAIL"]
-    },
-    "@midday/email#build": {
-      "env": ["RESEND_FROM_EMAIL"]
-    },
-    "@midday/dashboard#build": {
-      "env": ["RESEND_FROM_EMAIL"]
     }
   }
 }
