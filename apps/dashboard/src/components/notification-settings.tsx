@@ -1,4 +1,4 @@
-// @ts-nocheck - will be removed soon
+// @ts-nocheck - will be removed soon. Module désactivé car nécessite NOVU_SECRET_KEY
 /*
 import { trpc } from "@/trpc/server";
 import { getQueryClient } from "@/trpc/server";
@@ -14,6 +14,7 @@ export function NotificationSettingsSkeleton() {
 }
 
 export async function NotificationSettings() {
+/*
   const queryClient = getQueryClient();
   const user = await queryClient.fetchQuery(trpc.user.me.queryOptions());
 
@@ -48,4 +49,6 @@ export async function NotificationSettings() {
       </div>
     </div>
   );
+*/
+return null;
 }
