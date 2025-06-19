@@ -48,7 +48,8 @@
         "NEXTAUTH_URL",
         "TRIGGER_API_URL",
         "TRIGGER_API_KEY",
-        "TRIGGER_PROJECT_ID"
+        "TRIGGER_PROJECT_ID",
+        "NOVU_SECRET_KEY"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],
