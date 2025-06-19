@@ -6,7 +6,7 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
-    "build": {
+    "build-app": {
       "env": [
         "SUPABASE_SERVICE_KEY",
         "SUPABASE_API_KEY",
@@ -55,7 +55,7 @@
         "RESEND_FROM_EMAIL"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build-app"],
       "outputs": [
         ".next/**",
         "!.next/cache/**",
@@ -88,6 +88,16 @@
     "typecheck": {
       "dependsOn": ["^topo"],
       "outputs": []
+    },
+
+    "@midday/email#build-temp": {
+      "env": ["RESEND_FROM_EMAIL"]
+    },
+    "@midday/dashboard#build-temp": {
+      "env": ["RESEND_FROM_EMAIL"]
+    },
+    "@midday/engine#build-temp": {
+      "env": ["RESEND_FROM_EMAIL"]
     }
   }
 }
