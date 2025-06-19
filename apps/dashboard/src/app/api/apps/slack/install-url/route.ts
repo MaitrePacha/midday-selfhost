@@ -1,3 +1,4 @@
+/*
 import { trpc } from "@/trpc/server";
 import { getQueryClient } from "@/trpc/server";
 import { getInstallUrl } from "@midday/app-store/slack";
@@ -23,4 +24,5 @@ export async function GET() {
   return NextResponse.json({
     url,
   });
-}
+ }
+*/
