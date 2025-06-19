@@ -53,8 +53,7 @@
         "TRIGGER_PROJECT_ID",
         "NOVU_SECRET_KEY",
         "ENABLE_NOTIFICATIONS",
-        "NEXTAUTH_SEND_VERIFICATION_REQUEST",
-        "SEND_EMAIL_FROM"
+        "NEXTAUTH_SEND_VERIFICATION_REQUEST"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],
