@@ -6,7 +6,7 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
-    "build": {
+    "build-app": {
       "env": [
         "SUPABASE_SERVICE_KEY",
         "SUPABASE_API_KEY",
