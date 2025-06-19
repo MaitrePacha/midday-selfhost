@@ -1,4 +1,4 @@
-import StartPage from "./components/page";
+import { StartPage } from "@/components/page";
 
 export const revalidate = 1800;
 
