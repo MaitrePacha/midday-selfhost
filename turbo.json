@@ -1,6 +1,9 @@
 {
   "$schema": "https://turborepo.org/schema.json",
   "globalDependencies": ["**/.env"],
+
+  "globalPassThroughEnv": ["RESEND_FROM_EMAIL"],
+
   "ui": "stream",
   "tasks": {
     "topo": {
