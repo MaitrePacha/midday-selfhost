@@ -42,7 +42,13 @@
         "OUTLOOK_REDIRECT_URI",
         "MIDDAY_ENCRYPTION_KEY",
         "NEXT_PUBLIC_URL",
-        "VERCEL_TARGET_ENV"
+        "VERCEL_TARGET_ENV",
+        "SUPABASE_SERVICE_ROLE_KEY",
+        "NEXTAUTH_SECRET",
+        "NEXTAUTH_URL",
+        "TRIGGER_API_URL",
+        "TRIGGER_API_KEY",
+        "TRIGGER_PROJECT_ID"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],
