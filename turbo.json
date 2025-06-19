@@ -43,6 +43,7 @@
         "MIDDAY_ENCRYPTION_KEY",
         "NEXT_PUBLIC_URL",
         "VERCEL_TARGET_ENV",
+
         "SUPABASE_SERVICE_ROLE_KEY",
         "NEXTAUTH_SECRET",
         "NEXTAUTH_URL",
@@ -88,6 +89,30 @@
     "typecheck": {
       "dependsOn": ["^topo"],
       "outputs": []
+    },
+
+
+    "@midday/engine#build": {
+      "env": [
+        "RESEND_FROM_EMAIL",
+        "SEND_EMAIL_FROM",
+        "NEXTAUTH_SEND_VERIFICATION_REQUEST"
+      ]
+    },
+    "@midday/email#build": {
+      "env": [
+        "RESEND_FROM_EMAIL",
+        "SEND_EMAIL_FROM",
+        "NEXTAUTH_SEND_VERIFICATION_REQUEST"
+      ]
+    },
+    "@midday/dashboard#build": {
+      "env": [
+        "RESEND_FROM_EMAIL",
+        "SEND_EMAIL_FROM",
+        "NEXTAUTH_SEND_VERIFICATION_REQUEST"
+      ]
     }
+
   }
 }
