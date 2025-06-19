@@ -14,6 +14,7 @@ import {
 } from "./notification-settings";
 
 export async function NotificationsSettingsList() {
+/*
   return (
     <Card>
       <CardHeader>
@@ -32,4 +33,6 @@ export async function NotificationsSettingsList() {
       </CardContent>
     </Card>
   );
+*/
+return null;
 }
