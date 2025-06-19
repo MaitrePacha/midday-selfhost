@@ -12,8 +12,12 @@ export function NotificationSettingsSkeleton() {
 }
 
 export async function NotificationSettings() {
-  const enabled = process.env.ENABLE_NOTIFICATIONS === "true";
-  if (!enabled) return null;
+  if (process.env.ENABLE_NOTIFICATIONS !== "true") return null;
+
+  const { trpc } = await import("@/trpc/server");
+  const { getQueryClient } = await import("@/trpc/server");
+  const { getSubscriberPreferences } = await import("@midday/notification");
+  const { NotificationSetting } = await import("./notification-setting");
 
   const queryClient = getQueryClient();
   const user = await queryClient.fetchQuery(trpc.user.me.queryOptions());
