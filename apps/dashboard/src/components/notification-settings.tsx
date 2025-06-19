@@ -1,9 +1,11 @@
 // @ts-nocheck - will be removed soon
+/*
 import { trpc } from "@/trpc/server";
 import { getQueryClient } from "@/trpc/server";
 import { getSubscriberPreferences } from "@midday/notification";
 import { Skeleton } from "@midday/ui/skeleton";
 import { NotificationSetting } from "./notification-setting";
+*/
 
 export function NotificationSettingsSkeleton() {
   return [...Array(2)].map((_, index) => (
