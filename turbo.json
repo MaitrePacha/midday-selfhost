@@ -6,15 +6,6 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
-    "@midday/email#build": {
-      "env": ["RESEND_FROM_EMAIL"]
-    },
-    "@midday/dashboard#build": {
-      "env": ["RESEND_FROM_EMAIL"]
-    },
-    "@midday/engine#build": {
-      "env": ["RESEND_FROM_EMAIL"]
-    },
     "build": {
       "env": [
         "SUPABASE_SERVICE_KEY",
