@@ -1,11 +1,9 @@
-// @ts-nocheck - will be removed soon. Module désactivé car nécessite NOVU_SECRET_KEY
-/*
+// @ts-nocheck - will be removed soon
 import { trpc } from "@/trpc/server";
 import { getQueryClient } from "@/trpc/server";
 import { getSubscriberPreferences } from "@midday/notification";
 import { Skeleton } from "@midday/ui/skeleton";
 import { NotificationSetting } from "./notification-setting";
-*/
 
 export function NotificationSettingsSkeleton() {
   return [...Array(2)].map((_, index) => (
@@ -14,7 +12,9 @@ export function NotificationSettingsSkeleton() {
 }
 
 export async function NotificationSettings() {
-/*
+  const enabled = process.env.ENABLE_NOTIFICATIONS === "true";
+  if (!enabled) return null;
+
   const queryClient = getQueryClient();
   const user = await queryClient.fetchQuery(trpc.user.me.queryOptions());
 
@@ -49,6 +49,4 @@ export async function NotificationSettings() {
       </div>
     </div>
   );
-*/
-return null;
 }
