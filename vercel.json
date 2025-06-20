@@ -1,6 +1,6 @@
 {
   "regions": ["fra1"],
-  "functions": {
+  "functions_disabled": {
     "api/**.ts": {
       "maxDuration": 60
     }
