@@ -41,4 +41,11 @@ const config = {
   },
 };
 
+// temporaire. expose les variables au runtime/middleware :
+config.env = {
+  NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+  NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+  NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+};
+
 export default config;
