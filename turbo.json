@@ -52,7 +52,11 @@
         "TRIGGER_PROJECT_ID",
         "NOVU_SECRET_KEY",
         "ENABLE_NOTIFICATIONS",
-        "RESEND_FROM_EMAIL"
+        "RESEND_FROM_EMAIL",
+        "SUPABASE_URL",
+        "SUPABASE_ANON_KEY",
+        "NEXT_PUBLIC_SUPABASE_URL",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],
