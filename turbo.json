@@ -16,7 +16,9 @@
         "NEXTAUTH_SECRET",
         "NEXTAUTH_URL",
         "NEXT_PUBLIC_URL",
-        "VERCEL_TARGET_ENV"
+        "TRIGGER_API_URL",
+        "TRIGGER_API_KEY",
+        "TRIGGER_PROJECT_ID"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],
